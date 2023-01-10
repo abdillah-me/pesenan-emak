@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://cdn.tailwindcss.com"></script>
+   </head>
+   <body>
+      <!-- popup -->
+      <div id="popup" class="w-screen h-screen absolute top-0 bg-black/50 z-30 lg:hidden">
+         <div class="bg-white m-4 p-5 shadow-md rounded-lg relative">
+            <h1 class="font-bold text-center">Pesenan Emak 📝</h1>
+            <p class="mt-3">
+               sebuah aplikasi sederhana untuk kamu yang suka lupa pesenan emak. dengan aplikasi ini
+               diharapkan gak boleh lupa lagi 😁. bimsillah jadi anak soleh 😊
+            </p>
+            <p
+               class="text-base text-white w-full text-center absolute -bottom-72 left-[50%] -translate-x-1/2"
+            >
+               klik mana aja untuk mulai 🙏
+            </p>
+         </div>
+      </div>
+      <header class="fixed z-10 w-full top-0">
+         <section id="hero" class="w-full bg-teal-500">
+            <div class="container">
+               <div class="brand font-semibold text-lg text-center py-3 text-white">
+                  Pesenan Emak 🙌
+               </div>
+            </div>
+         </section>
+      </header>
+      <section id="form-list" class="mt-14 lg:mt-20">
+         <div class="container lg:relative lg:mx-auto lg:mt-4">
+            <div class="w-full shadow-md p-5 lg:w-1/3 lg:m-3 lg:fixed">
+               <form action="" id="todo-form" class="">
+                  <input
+                     type="text"
+                     id="input-todo"
+                     class="w-full outline outline-teal-700 my-2 rounded-sm p-2"
+                  />
+                  <button type="submit" class="bg-teal-600 rounded-lg py-1 px-5 text-white mt-2">
+                     Catat 📝
+                  </button>
+               </form>
+            </div>
+            <div
+               id="list-todo"
+               class="w-full p-5 lg:w-[57%] lg:m-3 lg:absolute lg:right-0 lg:bg-white lg:shadow-md"
+            >
+               <!-- data -->
+            </div>
+         </div>
+      </section>
+
+      <!-- script js -->
+      <script src="index.js"></script>
+   </body>
+</html>
